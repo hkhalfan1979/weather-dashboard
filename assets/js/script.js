@@ -127,13 +127,13 @@ async function displayCurrentWeather() {
         var getUVIndex = uvResponse.value;
         var uvNum = $("<span>");
         if (getUVIndex > 0 && getUVIndex <= 2.99){
-            uvNum.addClass("bg-primary low");
+            uvNum.addClass("p-2 bg-primary low");
         }else if(getUVIndex >= 3 && getUVIndex <= 5.99){
-            uvNum.addClass("bg-success moderate");
+            uvNum.addClass("p-2 bg-success moderate");
         }else if(getUVIndex >= 6 && getUVIndex <= 7.99){
-            uvNum.addClass("bg-warning high");
+            uvNum.addClass("p-2 bg-warning high");
         }else if(getUVIndex >= 8 && getUVIndex <= 10.99){
-            uvNum.addClass("bg-danger very-high");
+            uvNum.addClass("p-2 bg-danger very-high");
         }else{
             uvNum.addClass("bg-danger extreme");
         } 
