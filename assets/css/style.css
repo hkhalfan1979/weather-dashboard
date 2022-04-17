@@ -1,0 +1,17 @@
+button {
+     width: 100%;
+     margin: 10px 0;
+}
+ul.city-list {
+    cursor: pointer;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    ul.city-list li {
+         border: 1px solid black;
+         padding: 10px 0;
+    }
+.card {
+ border-color: #ffffff;
+}

@@ -14,7 +14,7 @@ function showCities(){
     $("#city-name").val("");
     
     for (i=0; i<cityList.length; i++){
-        var cityistEl = $("<li class='bg-success'>");
+        var cityistEl = $("<li class='bg-primary px-2'>");
         cityistEl.addClass("city");
         cityistEl.attr("data-name", cityList[i]);
         cityistEl.text(cityList[i]);
@@ -161,7 +161,7 @@ async function displayFiveDayWeather() {
       
 
       for (i=0; i<5;i++){
-          var forecastCard = $("<div class='card mb-3 mt-3'>");
+          var forecastCard = $("<div class='bg-info card mb-3 mt-3'>");
           var cardBody = $("<div class='card-body'>");
           var date = new Date();
           var val=(date.getMonth()+1)+"/"+(date.getDate()+i+1)+"/"+date.getFullYear();

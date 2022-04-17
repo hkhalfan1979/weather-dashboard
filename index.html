@@ -7,47 +7,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <style>
-           button {
-                width: 100%;
-                margin: 10px 0;
-           }
-          ul.city-list {
-               cursor: pointer;
-               list-style: none;
-               margin: 0;
-               padding: 0;
-          }
-               ul.city-list li {
-                    border: 1px solid black;
-                    padding: 10px 0;
-               }
-      </style>
+      <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     
+    <div class="bg-secondary container-fluid px-0 text-light">
+        <div class="row">
+            <div class="col-12 text-center p-3">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </div>
     <div class="container-fluid">
      <div class="row">
-         <div class="col-12 text-center">
-             <h1>Weather Dashboard</h1>
-         </div>
-     </div>
-    <div class="container-fluid">
-     <div class="row">
-         <div class="col-2 px-0">
+        <div class="col-2 p-2 bg-primary text-light">
              <h4>Weather by city:</h4>
              <div class="mb-3">
-                    <input type="text" class="form-control" id="city-name" placeholder="Enter city name">
-                    <button class="btn btn-info" type="button" id="citySearchBtn">
-                         <span class="material-icons-outlined">search</span>
-                    </button>
-                 </div>
+                <input type="text" class="form-control" id="city-name" placeholder="Enter city name">
+                <button class="btn btn-info" type="button" id="citySearchBtn">
+                        <span class="material-icons-outlined">search</span>
+                </button>
+             </div>
                  <ul class="city-list" id="cityList"></ul>                    
-             </div>
-             <div class="col-10 px-0">
-                    <div class="card" id="selectedCityWeather"></div>
-                    <div class="card"  id="selectedCityWeatherForcast"></div>
-             </div>
+        </div>
+        <div class="col-10 px-0 bg-primary text-light">
+                <div class="col-12 bg-danger card" id="selectedCityWeather"></div>
+                <div class="col-12 pt-2 bg-info px-2 card"  id="selectedCityWeatherForcast"></div>
+        </div>
      </div>
  </div>
    
